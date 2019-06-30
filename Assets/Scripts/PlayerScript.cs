@@ -4,21 +4,28 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    
-    public float runningSpeed = 5f;
+    public float jumpHeight = 5f;
+    private Rigidbody2D rb;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-    
-        transform.position += Vector3.right * runningSpeed * Time.deltaTime;
+     
+        Jump();        
+    }
 
-            
+    
+    void Jump()
+    {
+        if(Input.touchCount > 0)
+        {
+            rb.velocity = Vector3.up * jumpHeight * Time.deltaTime;
+        }
     }
 }
