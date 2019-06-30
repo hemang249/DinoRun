@@ -502,6 +502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2189500611551004008}
   - component: {fileID: 2189500611551004009}
+  - component: {fileID: 1303796718}
   m_Layer: 0
   m_Name: Land
   m_TagString: Untagged
@@ -577,6 +578,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 13.2304535, y: 1.0950556}
   m_EdgeRadius: 0
+--- !u!114 &1303796718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2189500611551004014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3696dac88bab6ce949efcfd7bc9051fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Land: {fileID: 2189500611551004014}
+  Camera_Right: {fileID: 0}
+  Camera_Left: {fileID: 0}
+  LandGenerator: {fileID: 0}
+  MidPoint: {fileID: 2189500612355821564}
+  EndPoint: {fileID: 2189500611644355113}
+  moveSpeed: 5
 --- !u!1 &2189500611572960834
 GameObject:
   m_ObjectHideFlags: 0
